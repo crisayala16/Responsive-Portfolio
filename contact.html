@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 
@@ -21,27 +22,18 @@
 		<section id="main">
 
 			<h2 id="main-heading">Contact</h2>
-
-			<form>
-
-				<h3>Name</h3>
-
-				<input type="text" id="name" placeholder="John Smith">
-
-				<h3>Email</h3>
-
-				<input type="text" id="email" placeholder="example@gmail.com">
-
-				<h3>Message</h3>
-
-				<textarea cols="60" rows="20" id="mes"></textarea>
 				
-				<br>
+				<form id="myform" method="post">
 
-				<a href="#"><p id="sub">Submit</p></a>
-
-			</form>
-
+					<h3>Name</h3>
+					<input id="name" type="text" name="from_name" placeholder="John Smith"/>
+					<h3>Message</h3>
+					<textarea id="mes" name="message_html" cols="60" rows="20"></textarea>
+					<br><br>
+					<button id="sub">
+						Send
+					</button>
+				</form>
 		</section>
 
 		<aside id="connect">
@@ -63,6 +55,13 @@
 		</aside>
 
 		<footer id="footer">@Copyright 2016 Cristopher Ayala Paz</footer>
-		
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+				emailjs.init("user_kPGPWQtVjlC1bYh37c7xj");
+			})();
+		</script>
+		<script type="text/javascript" src='assets/javascript/email.js'></script>
 	</body>
 	</html>
