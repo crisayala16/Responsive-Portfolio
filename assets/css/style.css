@@ -40,16 +40,18 @@ h3{
 	color: teal;
 }
 
-#name, #email{
+#name{
 	margin: 0 10px;
 	width: 90%;
 	height: 30px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 #mes{
 	margin: 0 10px 10px 10px;
 	width: 90%;
 	height: 220px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 #nav-about, #nav-portfolio{
